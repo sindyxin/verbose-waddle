@@ -1,0 +1,22 @@
+// Place all the styles related to the Session controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#register,
+#login{
+    width: 45%;
+    padding: 15px 15px;
+    margin-right:3%;
+    border: 1px solid #57606f;
+    display: inline-block;
+    vertical-align: top;
+}
+.form-control{
+    font-size: 8px;
+    // width:150px;
+    height: 20px;
+}
+.form-control,
+label{
+    display: inline-block;
+    vertical-align: middle;
+}

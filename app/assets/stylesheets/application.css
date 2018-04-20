@@ -1,0 +1,50 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap.min
+ *= require_tree .
+ *= require_self
+ */
+ body{
+    font-size: 8px;
+    padding: 40px 40px;
+    background-color: #fab1a0;
+    color: #57606f;
+}
+h4{
+   margin-top: 15px;
+}
+a{
+   margin-right: 10px;
+}
+button{
+   border-radius: 5px;
+   background-color:#b2bec3;
+}
+#comment{
+   width:200px;
+   height: 80px;
+}
+#comment_dashboard{
+   width: 200px;
+   height: 80px;
+   font-size: 8px;
+}
+#error_message{
+    color: red;
+}
+a{
+    text-decoration: underline;
+}
+a:hover {
+    color: red;
+}

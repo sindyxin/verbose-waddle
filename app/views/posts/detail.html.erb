@@ -1,0 +1,22 @@
+
+<a href="/bright_ideas">Bright ideas</a>
+<p class="mt-3"><a href="/users/<%= @post.user.id%>"><%= @post.user.alias%><a>says: <%= @post.content%></p>
+<p>People who liked this post:</p>
+<table class="table-sm">
+    <thead class="text-center">
+    <tr>
+        <th>Alias</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% if @likes %>
+        <% @likes.each do |like| %>
+        <tr>
+            <td><a href="/users/<%= like.user.id %>"><%= like.user.alias %></a></td>
+            <td><%= like.user.name %></td>
+        <tr>
+        <% end %>
+    <% end %>
+    </tbody>
+</table>
